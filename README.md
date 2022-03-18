@@ -31,4 +31,28 @@ También leí el TFG de Daniel Hervás sobre Gamificación en Unibotics, parece 
 Por último me informé sobre como implementar gamificación en educación ( 
 [Gamificación en educación.pptx](https://github.com/RoboticsLabURJC/2022-tfg-raul-fernandez/files/8110740/Gamificacion.en.educacion.pptx) 
 ), serían los pasos que me gustaría seguir en Unibotics, pero necesitaré mucha más información sobre el público de esta plataforma, ver en que enfocamos el TFG...
+# Semana 3
+Esta semana estuvo enfocado en aprender a utilizar un tecnología de automatización de tareas, Selenium. Estuve toda la semana aprendiendo a utilizarla,  termine creado un pequeño programa que se registra en Unibotics y lanza un ejercicio. Además de seguir viendo el código fuente.
+
+
+https://user-images.githubusercontent.com/57095736/159031002-cca63b37-5512-4277-80af-cad74efbed6b.mp4
+
+# Semana 4
+Ya hemos comenzado a trabajar en el tfg, ya añadí en la base de datos el nuevo rol que desarrollaremos, el Maestro de Ceremonias, el cual podrá pedir códigos de otros usuarios para evaluarlos y posteriormente mandarlos al servidor para crear una clasificación. De momento solo muestra una frase si es el usuario maestro de ceremonias. o no.
+
+![image](https://user-images.githubusercontent.com/57095736/159032133-5d17fd97-b76e-4b47-8096-aa21e7d4429b.png)
+![image](https://user-images.githubusercontent.com/57095736/159031674-80e935cc-4d66-4fcf-80c9-f90ec64e1eec.png)
+
+Además estuve toda la semana con tutoriales de como funciona django, ya que es una tecnología que no había usado nunca y estaba provocando que me bloquease. Pero ya comprendo como funciona el sistema de modelo-vista-plantilla de cara a la siguiente semana. 
+
+# Semana 5 
+Esta semana se han complentado varios objetivos esta semana:
+  - Menú básico del maestro con todos los ejercicios disponibles
+  - Plantilla dinámica para el maestro de ceremonia, en base al ejercicio pedido muestra una u otra utilizando herencia.
+  - Permitir al maestro cargar código de un usuario en el editor de código del ejercicio. 
+Se soluciono un problema que complicó bastante  semana, en el código fuente de unibotics había una función que provocaba que al entrar a un ejercicio ya no podías navegar a ninguna otra página, lo encontré y comuniqué a Unibotics, me dieron permiso para eliminar la llamada.
+
+![image](https://user-images.githubusercontent.com/57095736/159033254-569834db-b518-4951-9b39-9f3a4cea4fb1.png)
+
+![image](https://user-images.githubusercontent.com/57095736/159033391-4d820fb5-a84a-4d48-b6c5-1169cbe61344.png)
 
