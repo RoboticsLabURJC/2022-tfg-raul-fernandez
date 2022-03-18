@@ -50,9 +50,27 @@ Esta semana se han complentado varios objetivos esta semana:
   - Menú básico del maestro con todos los ejercicios disponibles
   - Plantilla dinámica para el maestro de ceremonia, en base al ejercicio pedido muestra una u otra utilizando herencia.
   - Permitir al maestro cargar código de un usuario en el editor de código del ejercicio. 
+  - Automatizado con selenium todo el proceso desde registrarse hasta cargar el código del usuario.
 Se soluciono un problema que complicó bastante  semana, en el código fuente de unibotics había una función que provocaba que al entrar a un ejercicio ya no podías navegar a ninguna otra página, lo encontré y comuniqué a Unibotics, me dieron permiso para eliminar la llamada.
 
 ![image](https://user-images.githubusercontent.com/57095736/159033254-569834db-b518-4951-9b39-9f3a4cea4fb1.png)
 
 ![image](https://user-images.githubusercontent.com/57095736/159033391-4d820fb5-a84a-4d48-b6c5-1169cbe61344.png)
+
+# Semana 6
+Esta semana:
+   - He aprendido a usar de manera básica elastic search, para poder escribir de manera rápida los resultados de los torenos. He creado el documento torneo, donde se       guarda id del torneo, nombre y puntuación.
+   - Botón donde un usuario escribe su nombre y se apuntua a un torneo.
+   - Selenium es capaz de iterar variar veces sobre los códigos de los usuarios y mandar al servidor los resultados, donde se escriben en Elastic Search.
+   - En la página de resultados se muestran estos por orden, de mejor puntuación a peor.
+   - En el video solo vemos los dos primeros usuarios, faltaría el tercero pero la memoria de grabación no daba para más.
+  
+  
+
+https://user-images.githubusercontent.com/57095736/159039553-cc1596ee-ec1d-498f-8b3f-66a33ca51860.mp4
+
+   - Finalmente si nos vamos a la página de puntuación vemos los resultados de la prueba.
+   
+![image](https://user-images.githubusercontent.com/57095736/159039894-79ba5846-aa6d-4b9f-9176-1ba2caf2f276.png)
+
 
