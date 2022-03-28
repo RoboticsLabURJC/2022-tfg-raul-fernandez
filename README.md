@@ -73,4 +73,21 @@ https://user-images.githubusercontent.com/57095736/159039553-cc1596ee-ec1d-498f-
    
 ![image](https://user-images.githubusercontent.com/57095736/159039894-79ba5846-aa6d-4b9f-9176-1ba2caf2f276.png)
 
+# Semana 7
+- Concentrar en la página del torneo toda la información (participantes, resultados, emisión en vivo, actualización en tiempo real y apuntarse a un torneo)
+
+![image](https://user-images.githubusercontent.com/57095736/160450620-6dca1293-9b53-479f-9454-92e9ffd486c7.png)
+
+- Ocultar el código fuente en la vista del maestro (está hecho pero desactivado durante el desarrollo por verificar el correcto funcionamiento del mismo)
+
+![image](https://user-images.githubusercontent.com/57095736/160450953-c698b783-1616-4eac-b1f8-dbd7ad011e8f.png)
+
+- Avanzar en la estructura de la base de datos en Elastic Search, se ha mejorado la estrucutra para soportar múltiples torneos, que un usuario se pueda apuntar a varios torneos, recoger el código dependiendo del torneo...
+
+- Incrustar en el front-end una ventana con la emisión de twitch en directo
+
+- Permitir a Selenium iniciar directo pulsando un botón. Este paso ha sido complejo, se ha usado un plug-in de web-sockets para obs el cual nos permite crear una conexión en el puerto 4444 para dar órdenes, permitiendo iniciar directo y más funciones.
+![image](https://user-images.githubusercontent.com/57095736/160451762-3542c77a-67f1-47b7-a1e0-f1a007140e7e.png)
+![image](https://user-images.githubusercontent.com/57095736/160451966-173e816e-9c44-4674-98a6-ec9727de3f04.png)
+
 
