@@ -13,6 +13,7 @@
 - Incrustar en el front-end una ventana con la emisión de twitch en directo
 
 - Permitir a Selenium iniciar directo pulsando un botón. Este paso ha sido complejo, se ha usado un plug-in de web-sockets para obs el cual nos permite crear una conexión en el puerto 4444 para dar órdenes, permitiendo iniciar directo y más funciones.
+
 ![image](https://user-images.githubusercontent.com/57095736/160451762-3542c77a-67f1-47b7-a1e0-f1a007140e7e.png)
 ![image](https://user-images.githubusercontent.com/57095736/160451966-173e816e-9c44-4674-98a6-ec9727de3f04.png)
 
