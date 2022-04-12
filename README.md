@@ -1,4 +1,23 @@
 # 2022-tfg-raul-fernandez
+# Semana 9
+- Se ha conseguido automatizar arreglar el problema con el cerebro del robot, se debía arrancar el RADI antes que el navegador. El torneo está autmatizado al 100%  incluyendo lanzamiento y cierre de los contenedores docker, server y directo con OBS.
+
+- Se ha incluido los plug-in chosen.js y dataTable.js para mejorar el aspecto de tablas y formularios.
+
+- Se han añadido códigos de prueba de los alumnos del Master en Visión Artificial para simular un torneo de prueba.
+
+- Se ha preparado un pequeño a [video](https://www.youtube.com/watch?v=tITR2VZ2qig) a modo de resumen para el canal de JdeRobot
+
+# Semana 8
+
+- Automatizar el lanzamiento y cierre de los contenedores docker de Elastic Search, MySQL y RADI,programa OBS y lanzar el servidor. Este objetivo ha sido el más complejo y no se ha podido terminar, debido a que el navegador no es capaz de conectarse al cerebro del robot cuando el contenedor es lanzado por Selenium.
+
+-  Añadir a la base de datos de los torneos las fechas de: límite de registro, día del evento y última modificación.
+
+- Se ha creado una nuevo vista donde el maestro puede editar los torneos
+
+-Traducir código al ingles.
+
 # Semana 7
 - Concentrar en la página del torneo toda la información (participantes, resultados, emisión en vivo, actualización en tiempo real y apuntarse a un torneo)
 
