@@ -16,7 +16,7 @@
 
 - Se ha creado una nuevo vista donde el maestro puede editar los torneos
 
--Traducir código al ingles.
+- Traducir código al ingles.
 
 # Semana 7
 - Concentrar en la página del torneo toda la información (participantes, resultados, emisión en vivo, actualización en tiempo real y apuntarse a un torneo)
