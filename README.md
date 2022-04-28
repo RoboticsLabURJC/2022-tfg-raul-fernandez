@@ -1,4 +1,12 @@
 # 2022-tfg-raul-fernandez
+# Semana 11
+- Se ha conseguido realizar un despligue D2 del proyecto, se han tenido que hacer tres cambios sobre el código: añadir excepciones en los accesos a ElasticSearch en caso de no existir la tabla, el código del websocket con OBS se ha pasado de la parte del servidor al cliente donde se ejecuta selenium y pur último el cliente ya no accede a ElasticSearch, esto daba problemas en D2 al ejecutarse el contenedor de ES en el ordenador remoto.
+
+- Se han avanazado en la memoria del TFG y cambios en el índice del mismo
+
+# Semana 10
+- El objetivo de esta semana iba a ser intentar pasar el proyecto de D1 a D2 pero debido a que ha coincidido con Semana Santa no se nos han podido conceder los permisos necesarios para ello, entonces hemos comenzando con la memoria del TFG planteando el índice y resumiendo todo lo que se ha abordado en el mismo.
+
 # Semana 9
 - Se ha conseguido automatizar arreglar el problema con el cerebro del robot, se debía arrancar el RADI antes que el navegador. El torneo está autmatizado al 100%  incluyendo lanzamiento y cierre de los contenedores docker, server y directo con OBS.
 
