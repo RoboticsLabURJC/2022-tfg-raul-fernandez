@@ -1,4 +1,55 @@
 # 2022-tfg-raul-fernandez
+# Intrucciones de uso del Maestro de Ceremonias
+ ## Intrucciones D1
+  ### 1. Instalar Selenium
+  - Lo primero que necesitamos es descargarnos de su [página](https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/) los drivers del navegador que nosotros usemos, esto nos dará permiso para poder usar el navegador de manera automática. Es **muy importante** que la versión del driver sea la misma versión que la de nuestro navegador, si no sabes la versión de tu navegador lo puedes ver en esta [página](https://www.whatismybrowser.com/detect/) en el apartado de "Detect web browser".
+  
+  - Añadir la librería se Selenium en Pycharm, File -> Settings -> Python Interpreter -> pulsamos en el + que aparece en la parte izquierda y ecribimos selenium e instalamos el paquete.
+  
+  ![image](https://user-images.githubusercontent.com/57095736/165766276-3cfd5959-13e5-4dc8-a823-2157bdb4ca2b.png)
+  
+   ### 2. Definir directorios
+   - Debemos dirigirnos a la carpeta raul(CAMBIAR ESTO) al archivo torneoAutomático.py y en la función init cambiar el valor de la variable *driver_path* y poner el path donde hemos guardado el driver descargado en el apartado anterior.
+   
+   ![image](https://user-images.githubusercontent.com/57095736/165767461-eedf6616-af8d-4de7-94df-00972d768210.png)
+   
+   ### 3. Lanzamiento automático contenedores
+   **Si no quieres** que los contenedores docker, RADI y servidor se desplieguen y cierren solos dirigite al archivo run.py en la carpeta raul(CAMBIAR ESTO) y comenta las llamadas a los métodos startContainers, launchServer, lanzarRadi y stopContaners (cuidado esta última se llama dos veces). SI USAS LINUX NO LANZES EL SERVIDOR AUTOMÁTICAMENTE ya que el TFG fué desarrollado en Windows y la manera que se usa para detenerlo solo funciona en Windows así que también comenta la función stopServer del run.py. En caso de querer que se lanzen y detengan los contenedores de manerá automática:
+   - En la función launchServer debemos poner el path donde se encuentre el archivo manage.py
+![image](https://user-images.githubusercontent.com/57095736/165770842-2d2b1e38-48b3-48e2-928f-ac4b9d1b98e1.png)
+
+- El lanzamiento y detención de los contenedores Docker no debería dar problemas ya que se usan comandos Docker en ambos casos.
+
+### 4. Emisión vía twitch
+Este paso lo podemos omitir si no estamos interesados en retransmitir vía Twitch.
+
+- Abrir OBS: el primer paso será instalar el programa [OBS](https://obsproject.com/es/download) si no lo tenemos instalado, una vez lo tengamos vamos a la función openObs debemos poner el path donde se encuentra el ACCESO DIRECTO a OBS, esto es un pequeño truco para evitar problemas de seguridad del programa, si no sabes donde se encuentra escribe en el explorador del ordenador OBS y hacemos click derecho en el resultado y abrir ubicación del archivo. También cambia el nombre del acceso directo a obs64 para evitar problemas de espacios, así solo tendrás que cambiar el path indicado en rojo en la foto.
+
+![image](https://user-images.githubusercontent.com/57095736/165777394-7a685e38-fb82-4863-83c4-36fc4861deee.png)
+
+- Configurar websocket OBS: primero nos dirigimos a la función startStreaming y copiamos la contraseña de la variable password, a continuación abrimos el programa OBS y pulsamos en herramientas -> Configuración del servidor WebSocket, ponemos las mismas opciones que en la foto inferior y pegamos la contraseña.
+
+![image](https://user-images.githubusercontent.com/57095736/165780882-b79284b6-1ec7-40d3-804e-6309717ce68a.png)
+
+### 5. Configurar torneo
+
+- Crear un torneo: accedemos a Unibotics con el usuario instrumentar que tenga asignado el rol de "maestro", esto lo podemos ver en la tabla de usuario del repositorio de Unibotics Webserver. En la zona de crear un nuevo torneo elegimos la plantilla del ejercicio en la que se basará el torneo, fecha límite de inscripción (no pongas el mismo día en el que te encuentra o inferior) y día en el que se celebrará el torneo.
+
+![image](https://user-images.githubusercontent.com/57095736/165782148-fd9aa996-8dc4-4a7d-b2ba-026f4519c6b8.png)
+ 
+- Aprovechando que estamos con el maestro de ceremonias pulsamos en la opción de editar torneos y nos copiamos el id del torneo que hemos creado y el nombre del ejercio (lo necesitaremos más adelante).
+
+![image](https://user-images.githubusercontent.com/57095736/165782755-130babfe-2650-4ad4-a30b-b63b7618bc3e.png)
+
+- Volvemos a entrar a Unibotics con algún usuario que tenga rol de estudiante, y pulsamos en la opción de ver torneos y seleccionamos el torneo que hemos creado en el paso anterior, y pulsamos en el botón de apuntarse, si refrescamos apareceremos en la tabla de partcipantes. Podemos repetir este paso con los usuario que queramos.
+
+- Nos vamos al archivo run.py de la carpeta raul (CAMBIAR ESTO) y en la variable tournamentID y tornamantExercise ponemos el id y ejercicio del torneo que copiamos en el paso anterior 
+
+ 
+
+
+
+
 # Semana 11
 - Se ha conseguido realizar un despligue D2 del proyecto, se han tenido que hacer tres cambios sobre el código: añadir excepciones en los accesos a ElasticSearch en caso de no existir la tabla, el código del websocket con OBS se ha pasado de la parte del servidor al cliente donde se ejecuta selenium y pur último el cliente ya no accede a ElasticSearch, esto daba problemas en D2 al ejecutarse el contenedor de ES en el ordenador remoto.
 
