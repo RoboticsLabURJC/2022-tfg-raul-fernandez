@@ -1,6 +1,6 @@
 # 2022-tfg-raul-fernandez
 # Intrucciones de uso del Maestro de Ceremonias
- ## Intrucciones D1
+
   ### 1. Instalar Selenium
   - Lo primero que necesitamos es descargarnos de su [página](https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/) los drivers del navegador que nosotros usemos, esto nos dará permiso para poder usar el navegador de manera automática. Es **muy importante** que la versión del driver sea la misma versión que la de nuestro navegador, si no sabes la versión de tu navegador lo puedes ver en esta [página](https://www.whatismybrowser.com/detect/) en el apartado de "Detect web browser".
   
@@ -44,6 +44,14 @@ Este paso lo podemos omitir si no estamos interesados en retransmitir vía Twitc
 - Volvemos a entrar a Unibotics con algún usuario que tenga rol de estudiante, y pulsamos en la opción de ver torneos y seleccionamos el torneo que hemos creado en el paso anterior, y pulsamos en el botón de apuntarse, si refrescamos apareceremos en la tabla de partcipantes. Podemos repetir este paso con los usuario que queramos.
 
 - Nos vamos al archivo run.py de la carpeta raul (CAMBIAR ESTO) y en la variable tournamentID y tornamantExercise ponemos el id y ejercicio del torneo que copiamos en el paso anterior 
+
+### 6. Diferencias D1 y D2
+
+- D1: cuando estamos realizando un despliegue D1 signifíca que todo está en local en nuestra máquina, por lo tanto debemos arrancar el contenedor de MySQL, ElasticSearch, RADI y servidor (manage.py), si queremos desplegarlos y pararlos de manera automática ya depende de nuestra elección como vimos en el apartado 3.
+- D2: cuando realizamos un despliegue D2 el código se divide en dos partes, el servidor se está ejecutando en el ordenador remoto del laboratio el cual nos está proporcioando de manera automática MySQL, ElasticSearch y servidor (manage.py), por lo tanto **nosotros no debemos lanzarlos**, solo debemos lanzar el RADI. Además debemos entender que el archivo run.py y torneoautomático.py se ejecutaráne en nuestro ordenador ya que los debemos lanzar para activar Selenium y la automátización del torneo, emisión de Twitch y maestro de ceremonias.
+
+![image](https://user-images.githubusercontent.com/57095736/166100136-82cb59e2-05dd-4d43-b790-d9d22154e16c.png)
+
 
  
 
